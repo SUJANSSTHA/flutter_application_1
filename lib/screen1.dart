@@ -22,15 +22,26 @@ class _screen1State extends State<screen1> {
         ],
         backgroundColor: Colors.red,
       ),
+      // body: Padding(
+      //   padding: const EdgeInsets.only(top: 200, left: 40, right: 40),
+      //   // alignment: Alignment.center,
+      //   child: Text(
+      //     "Flutter Sujan",
+      //     style: TextStyle(
+      //         fontSize: 30,
+      //         color: Colors.orange,
+      //         fontWeight: FontWeight.bold,
+      //         letterSpacing: 4),
+      //   ),
+      // ),
+
+      // Flutter Button Widget
       body: Center(
-        child: Text(
-          "Flutter Sujan",
-          style: TextStyle(
-              fontSize: 30,
-              color: Colors.orange,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 4),
-        ),
+        child: ElevatedButton(
+            onPressed: () {
+              print("Button pressed");
+            },
+            child: Text("Press me Sujan")),
       ),
     );
   }
