@@ -36,12 +36,65 @@ class _screen1State extends State<screen1> {
       // ),
 
       // Flutter Button Widget
+      // body: Center(
+      //   child: GestureDetector(
+      //       onTap: () {
+      //         print('pressed');
+      //       },
+      //       child: Icon(
+      //         Icons.favorite,
+      //         size: 50,
+      //         color: Colors.red,
+      //       )),
+      // ),
+
+      //! Flutter Container widget and properties
+      //* GestureDector is for event perforn
+
+      //* body: Center(
+      //*     child: GestureDetector(
+      //*   onTap: () {
+      //*     print('calling to Hospital');
+      //*   },
+      //*   child: Container(
+      //*       decoration: BoxDecoration(
+      //*         color: Colors.orange,
+      //*         borderRadius: BorderRadius.circular(12),
+      //*       ),
+      //*       height: 50,
+      //*       width: 200,
+      //* color: Colors.orange,
+      //* child: Center(
+      //*     child: Text(
+      //*   "Add to card Sujan",
+      //*   style: TextStyle(fontSize: 20, color: Colors.white),
+      // child: Center(child: Icon(Icons.shopping_cart)))),
+      // child: Center(
+      // child: Icon(
+      // Icons.local_hospital,
+      // color: Colors.white,
+      // size: 50,
+      // ))),
+      // )),
+//     );
+//   }
+// }
+//* Image widget in flutter | Flutter image | Asset and Network image in flutter
+
       body: Center(
-        child: ElevatedButton(
-            onPressed: () {
-              print("Button pressed");
-            },
-            child: Text("Press me Sujan")),
+        child: Container(
+          height: 300,
+          width: 300,
+          // child: Image.asset(
+          // 'images/image1.png',
+          // fit: BoxFit.fill,
+          // ),
+          child: Image.network(
+            'https://owenhalliday.co.uk/static/ee54ba1ab58fec57cf4784cc67336993/c3707/intro-flutter-thumb.png',
+            fit: BoxFit.fill,
+          ),
+          color: Colors.orange,
+        ),
       ),
     );
   }
