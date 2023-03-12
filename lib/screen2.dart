@@ -31,8 +31,8 @@ class _screen2State extends State<screen2> {
 
       body: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3,
-          childAspectRatio: 1 / 1,
+          crossAxisCount: 4,
+          childAspectRatio: 1 / 2,
         ),
         itemBuilder: (context, index) {
           return Container(

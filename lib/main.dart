@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screen1.dart';
 import 'package:flutter_application_1/screen2.dart';
+import 'package:flutter_application_1/screen3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.yellow,
       ),
       // home: screen1(),
-      home: screen2(),
+      // home: screen2(),
+      home: screen3(),
     );
   }
 }
