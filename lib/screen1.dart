@@ -81,19 +81,83 @@ class _screen1State extends State<screen1> {
 // }
 //* Image widget in flutter | Flutter image | Asset and Network image in flutter
 
+//       body: Center(
+//         child: Container(
+//           height: 300,
+//           width: 300,
+//           // child: Image.asset(
+//           // 'images/image1.png',
+//           // fit: BoxFit.fill,
+//           // ),
+//           child: Image.network(
+//             'https://owenhalliday.co.uk/static/ee54ba1ab58fec57cf4784cc67336993/c3707/intro-flutter-thumb.png',
+//             fit: BoxFit.fill,
+//           ),
+//           color: Colors.orange,
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+//* Row widget | Flutter row widget
+//       body: Center(
+//         // child: Row/Column(
+//         child: Column(
+//           mainAxisAlignment: MainAxisAlignment.spaceAround,
+//           children: [
+//             Container(
+//               height: 60,
+//               width: 60,
+//               color: Colors.orange,
+//             ),
+//             Container(
+//               height: 60,
+//               width: 60,
+//               color: Colors.red,
+//             ),
+//             Container(
+//               height: 60,
+//               width: 60,
+//               color: Colors.black,
+//             ),
+//             Container(
+//               height: 60,
+//               width: 60,
+//               color: Color.fromARGB(255, 0, 17, 255),
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+//* Stack widget
+
       body: Center(
-        child: Container(
-          height: 300,
-          width: 300,
-          // child: Image.asset(
-          // 'images/image1.png',
-          // fit: BoxFit.fill,
-          // ),
-          child: Image.network(
-            'https://owenhalliday.co.uk/static/ee54ba1ab58fec57cf4784cc67336993/c3707/intro-flutter-thumb.png',
-            fit: BoxFit.fill,
-          ),
-          color: Colors.orange,
+        child: Stack(
+          //! alignment: Alignment.center,
+
+          //! alignment: Alignment.bottomCenter,
+          alignment: Alignment.topRight,
+          children: [
+            Container(
+              height: 300,
+              width: 300,
+              color: Colors.green,
+            ),
+            Container(
+              height: 200,
+              width: 200,
+              color: Colors.red,
+            ),
+            Container(
+              height: 100,
+              width: 100,
+              color: Colors.black,
+            ),
+          ],
         ),
       ),
     );
