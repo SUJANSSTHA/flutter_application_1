@@ -8,8 +8,33 @@ class screen3 extends StatefulWidget {
 }
 
 class _screen3State extends State<screen3> {
+  int num = 1;
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        leading: Icon(Icons.arrow_back),
+        // leading: Icon(Icons.chat),
+        title: Text("Flutter Practice"),
+        // title: Text("Instragram"),
+        centerTitle: true,
+        actions: [
+          Icon(Icons.arrow_back),
+
+          //* Icon(Icons.arrow_back),
+        ],
+        backgroundColor: Colors.red,
+      ),
+      body: Center(
+          child: ElevatedButton(
+        onPressed: () {
+          setState(() {
+            num++;
+          });
+        },
+        child: Text("$num"),
+      )),
+    );
   }
 }

@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screen1.dart';
 import 'package:flutter_application_1/screen2.dart';
 import 'package:flutter_application_1/screen3.dart';
+import 'package:flutter_application_1/screen4.dart';
+
+import 'flutterSimpleUI.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +33,9 @@ class MyApp extends StatelessWidget {
       ),
       // home: screen1(),
       // home: screen2(),
-      home: screen3(),
+      // home: screen3(),
+      // home: screen4(),
+      home: flutterSimpleUI(),
     );
   }
 }
