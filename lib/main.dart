@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/lists.dart';
 import 'package:flutter_application_1/screen1.dart';
 import 'package:flutter_application_1/screen2.dart';
 import 'package:flutter_application_1/screen3.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -35,7 +37,8 @@ class MyApp extends StatelessWidget {
       // home: screen2(),
       // home: screen3(),
       // home: screen4(),
-      home: flutterSimpleUI(),
+      // home: flutterSimpleUI(),
+      home: lists(),
     );
   }
 }
